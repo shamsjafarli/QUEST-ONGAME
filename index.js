@@ -85,7 +85,7 @@ function startGame() {
     qBtn.innerHTML = qObj.answers
         .map(
             (item) =>
-                `<button class="btn btn-outline-primary"   onclick="selectItem('${item}')">A.${item}</button>`
+                `<button class="btn btn-outline-primary"   onclick="selectItem('${item}')">${item}</button>`
         ).join("");
 
     console.log(qObj);
