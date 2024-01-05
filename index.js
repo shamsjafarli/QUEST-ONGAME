@@ -70,6 +70,9 @@ const falseImage = document.querySelector("#falseImage");
 const point = document.querySelector("#point")
 const correctSound = document.querySelector("#correctSound");
 const wrongSound = document.querySelector("#wrongSound")
+const progress = document.querySelector("#progress")
+
+let correctAnswers=0;
 
 const gameQ = new QuestionG(Questions);//!json adıdı bu
 
@@ -91,7 +94,7 @@ function startGame() {
 
 startGame()
 
-// ... (diğer kodlar)
+
 
 function selectItem(userChoose) {
     console.log(userChoose)
@@ -102,6 +105,8 @@ function selectItem(userChoose) {
     if (userChoose === currentQuestion.trueAnswer) {
         console.log("düz tapdi");
 
+        correctAnswers++;
+     progress.style.width = `${(correctAnswers / Questions.length) * 100}%`;
         gameQ.point += 10;
         point.textContent = `Your point: ${gameQ.point}`;
         falseImage.style.display = "none";
@@ -156,9 +161,4 @@ function selectItem(userChoose) {
 
 
 
-// gameQ.nextQuest()
-// gameQ.nextQuest()
-// gameQ.nextQuest()
-// gameQ.nextQuest()
-// gameQ.nextQuest()
-// gameQ.nextQuest()//!undefined dusur dusmmemsi ucun  nextqueste bir sert veririk 40.stıre bax
+ 
