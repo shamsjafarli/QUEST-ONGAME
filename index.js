@@ -50,7 +50,8 @@ class QuestionG {
     nextQuest() {
         if (this.nextQ == this.qData.length - 1) {
             console.log("oyun bitdi")
-            return false;
+              gameEnd.textContent = "CONGRATULATİONS"
+            endSound.play()
         }
         else {
             this.nextQ += 1;
@@ -71,6 +72,8 @@ const point = document.querySelector("#point")
 const correctSound = document.querySelector("#correctSound");
 const wrongSound = document.querySelector("#wrongSound")
 const progress = document.querySelector("#progress")
+const gameEnd = document.querySelector("#gameEnd")
+const endSound = document.querySelector("#endSound")
 
 let correctAnswers=0;
 
