@@ -54,6 +54,8 @@ class QuestionG {
             console.log("oyun bitdi")
             gameEnd.textContent = "CONGRATULATİONS"
             endSound.play()
+
+
         } else {
             this.nextQ += 1;
             const qTime = this.qData[this.nextQ];
