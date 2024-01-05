@@ -21,9 +21,19 @@ const Questions = [
     },
     {
         title: " Dünya umrumda değil translate turkish",
-        trueAnswer: "can't be bothered",
+        trueAnswer: "can`t be bothered",
         answers: ["go with the flow", "can't be bothered", "don't be naive", "stop bugging me", "what's your game?"]
     },
+ {
+        title: "Ben öncüyüm translate turkish?",
+        trueAnswer: "B.I am pioneer",
+        answers: ["A.You have not loyalty", "B.I am pioneer", "C.I am obsessed with", "D.I deserved to", "E.I am no longer "]
+    }
+    
+
+
+
+
 ]
 
 
