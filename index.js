@@ -21,14 +21,25 @@ const Questions = [
     },
     {
         title: " Dünya umrumda değil translate turkish",
+<<<<<<< HEAD
         trueAnswer: "B.can`t be bothered",
         answers: ["A.go with the flow", "B.can`t be bothered", "C.don't be naive", "D.stop bugging me", "E.what's your game?"]
     },
     {
+=======
+        trueAnswer: "can`t be bothered",
+        answers: ["go with the flow", "can`t be bothered", "don't be naive", "stop bugging me", "what's your game?"]
+    },
+ {
+>>>>>>> 66a47fae81435b18ab047e6e25921579a8fc2125
         title: "Ben öncüyüm translate turkish?",
         trueAnswer: "B.I am pioneer",
         answers: ["A.You have not loyalty", "B.I am pioneer", "C.I am obsessed with", "D.I deserved to", "E.I am no longer "]
     }
+<<<<<<< HEAD
+=======
+    
+>>>>>>> 66a47fae81435b18ab047e6e25921579a8fc2125
 
 
 
@@ -52,11 +63,18 @@ class QuestionG {
     nextQuest() {
         if (this.nextQ == this.qData.length - 1) {
             console.log("oyun bitdi")
+<<<<<<< HEAD
             gameEnd.textContent = "CONGRATULATİONS"
             endSound.play()
 
 
         } else {
+=======
+              gameEnd.textContent = "CONGRATULATİONS"
+            endSound.play()
+        }
+        else {
+>>>>>>> 66a47fae81435b18ab047e6e25921579a8fc2125
             this.nextQ += 1;
             const qTime = this.qData[this.nextQ];
             this.currentQuestion = qTime;
@@ -78,10 +96,14 @@ const progress = document.querySelector("#progress")
 const gameEnd = document.querySelector("#gameEnd")
 const endSound = document.querySelector("#endSound")
 
+<<<<<<< HEAD
 let correctAnswers = 0;
 
 
 
+=======
+let correctAnswers=0;
+>>>>>>> 66a47fae81435b18ab047e6e25921579a8fc2125
 
 const gameQ = new QuestionG(Questions);//!json adıdı bu
 
@@ -103,7 +125,7 @@ function startGame() {
 
 startGame()
 
-// ... (diğer kodlar)
+
 
 function selectItem(userChoose) {
     console.log(userChoose)
@@ -115,7 +137,11 @@ function selectItem(userChoose) {
         console.log("düz tapdi");
 
         correctAnswers++;
+<<<<<<< HEAD
         progress.style.width = `${(correctAnswers / Questions.length) * 100}%`;
+=======
+     progress.style.width = `${(correctAnswers / Questions.length) * 100}%`;
+>>>>>>> 66a47fae81435b18ab047e6e25921579a8fc2125
         gameQ.point += 10;
         point.textContent = `Your point: ${gameQ.point}`;
 
@@ -172,9 +198,4 @@ function selectItem(userChoose) {
 
 
 
-// gameQ.nextQuest()
-// gameQ.nextQuest()
-// gameQ.nextQuest()
-// gameQ.nextQuest()
-// gameQ.nextQuest()
-// gameQ.nextQuest()//!undefined dusur dusmmemsi ucun  nextqueste bir sert veririk 40.stıre bax
+ 
