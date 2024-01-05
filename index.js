@@ -22,7 +22,7 @@ const Questions = [
     {
         title: " Dünya umrumda değil translate turkish",
         trueAnswer: "can`t be bothered",
-        answers: ["go with the flow", "can't be bothered", "don't be naive", "stop bugging me", "what's your game?"]
+        answers: ["go with the flow", "can`t be bothered", "don't be naive", "stop bugging me", "what's your game?"]
     },
  {
         title: "Ben öncüyüm translate turkish?",
